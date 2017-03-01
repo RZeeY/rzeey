@@ -56,7 +56,7 @@ body {
 .swiper-slide-first,.swiper-slide-second {
 	background: url('images/Background-01.png') center repeat;
     text-align: center;
-    padding-top: 0%;
+    padding-top: 15%;
     padding-bottom: 0%;
     position: relative;
 }
