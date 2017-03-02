@@ -2,8 +2,10 @@
 /* 	position: absolute;
 	top:-337px;
 	left: 0; */
+/*     position: relative;
+    top: -340px; */
     position: relative;
-    top: -340px;
+    top: 5%;
 }
 
 #control{

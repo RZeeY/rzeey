@@ -2,8 +2,8 @@ var canvas = document.getElementById('canvas');
 	context = canvas.getContext('2d');
 	// W = canvas.width = window.innerWidth;
 	W = canvas.width = document.getElementsByClassName("wrap")[0].offsetWidth;
- 	H = canvas.height = window.innerHeight;
- 	// H = canvas.height = document.getElementsByClassName("wrap")[0].offsetHeight;
+ 	// H = canvas.height = window.innerHeight;
+ 	H = canvas.height = document.getElementsByClassName("wrap")[0].offsetHeight + 80;
 	gridY = 7, gridX = 7;
 
 	type = "ball";
