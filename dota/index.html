@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/dotaCss.css">
+	<title>刀圈周八卦</title>
+</head>
+<body>
+	<!-- 标题 -->
+	<div class="title">
+		<div class="wrap">
+	    <canvas id="canvas"></canvas>
+		    <div id="control" style="display: none;">
+		      <div>
+		        <h1>文字粒子</h1>
+		        <p style="margin: 0 0 20px 10px;">
+		          <span id="ball">圆形</span>
+		          <span id="rect">方块</span>
+		        </p>
+		        <p>文字</p>
+		        <input type="text" id="message" value="刀塔周八卦" onchange="change()">
+		        <p>重力</p>
+		        <input type="range" id="gra" value="0" min="-1" max="1" step="0.1" onchange="changeV()">
+		        <p>周期</p>
+		        <input type="range" id="dur" value="0.4" min="0.1" max="0.99" step="0.01" onchange="changeV()">
+		        <p>速度</p>
+		        <input type="range" id="speed" value="0.1" min="0" max="5" ste="0.01" onchange="changeV()">
+		        <p>半径</p>
+		        <input type="range" id="rad" value="2" min="1.8" max="20" step="0.1" onchange="changeV()">
+		        <p>分辨率</p>
+		        <input type="range" id="res" value="10" min="3" max="20" step="1" onchange="change()">
+		      </div>
+		    
+		       <div id="btn">
+		         <span></span>
+		         <span></span>
+		         <span></span>
+		       </div>
+		   </div>
+		</div>
+	</div> 
+	<!-- 第一块 -->
+	<div id="pice1" class="leftCont">
+		<div class="cover"></div>
+		<div class="wrap">
+			<!-- 框体开始 -->
+			<div class="box">
+				<div class="box-cont">
+					<!-- 框体内图片 -->
+					<img src="img/fdas.jpg" alt="" width="300px" height="200px">
+					<h3>主页上公布了他们的人</h3>
+					<p>蔡国师在前段时间离开Fnatic后便一直没有了下文，而今天适合又有了下文，棋王蔡宜风再次出山，一支叫Mineski Infinity Malaysia的新队伍在他们的Facebook主页上公布了他们的人员名单，Mushi屹然在列。而在图中我们已经能够看到Mushi的新队伍已经开始了集训。</p>
+				</div>
+			</div>
+			<!-- 框体结束 -->
+			<div class="commet">
+				<!-- 吐槽图片 -->
+				<div class="describe-img">
+					<img src="img/fdas.jpg" alt="" width="300px" height="200px">
+				</div>
+				<!-- 吐槽描述 -->
+				<div class="describe">
+					<p>蔡国师在前段时间离开Fnatic后便一直没有了下文，而今天适合又有了下文，棋王蔡宜风再次出山，一支叫Mineski Infinity Malaysia的新队伍在他们的Facebook主页上公布了他们的人员名单，Mushi屹然在列。而在图中我们已经能够看到Mushi的新队伍已经开始了集训。而Mushi自己的facebook上也确认了这条消息。除去Mushi的老冤家Kyxy，Xtinct和Kang也是东南亚的老选手了，而Alacrity似乎是一个新人，不过据说这位新人很厉害，目前已经是东南亚天梯的前3了。这会是下一个Midone吗？</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第二块 -->
+	<div id="pice2" class="rightCont">
+		<div class="cover"></div>		
+		<div class="wrap">
+			<div class="box">
+				<div class="box-cont">
+					<img src="img/fdas.jpg" alt="" width="300px" height="200px">
+					<h3>主页上公布了他们的人</h3>
+					<p>蔡国师在前段时间离开Fnatic后便一直没有了下文，而今天适合又有了下文，棋王蔡宜风再次出山，一支叫Mineski Infinity Malaysia的新队伍在他们的Facebook主页上公布了他们的人员名单，Mushi屹然在列。而在图中我们已经能够看到Mushi的新队伍已经开始了集训。</p>
+				</div>
+			</div>
+			<div class="commet">
+				<div class="describe-img">
+					<img src="img/fdas.jpg" alt="" width="300px" height="200px">
+				</div>
+				<div class="describe">
+					<p>蔡国师在前段时间离开Fnatic后便一直没有了下文，而今天适合又有了下文，棋王蔡宜风再次出山，一支叫Mineski Infinity Malaysia的新队伍在他们的Facebook主页上公布了他们的人员名单，Mushi屹然在列。而在图中我们已经能够看到Mushi的新队伍已经开始了集训。而Mushi自己的facebook上也确认了这条消息。除去Mushi的老冤家Kyxy，Xtinct和Kang也是东南亚的老选手了，而Alacrity似乎是一个新人，不过据说这位新人很厉害，目前已经是东南亚天梯的前3了。这会是下一个Midone吗？</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第三块 -->
+	<div id="pice3" class="leftCont">
+		<div class="cover"></div>		
+		<div class="wrap">
+			<div class="box">
+				<div class="box-cont">
+					<img src="img/fdas.jpg" alt="" width="300px" height="200px">
+					<h3>主页上公布了他们的人</h3>
+					<p>蔡国师在前段时间离开Fnatic后便一直没有了下文，而今天适合又有了下文，棋王蔡宜风再次出山，一支叫Mineski Infinity Malaysia的新队伍在他们的Facebook主页上公布了他们的人员名单，Mushi屹然在列。而在图中我们已经能够看到Mushi的新队伍已经开始了集训。</p>
+				</div>
+			</div>
+			<div class="commet">
+				<!-- 吐槽图片 -->
+				<div class="describe-img">
+					<img src="img/fdas.jpg" alt="" width="300px" height="200px">
+				</div>
+				<!-- 吐槽描述 -->
+				<div class="describe">
+					<p>蔡国师在前段时间离开Fnatic后便一直没有了下文，而今天适合又有了下文，棋王蔡宜风再次出山，一支叫Mineski Infinity Malaysia的新队伍在他们的Facebook主页上公布了他们的人员名单，Mushi屹然在列。而在图中我们已经能够看到Mushi的新队伍已经开始了集训。而Mushi自己的facebook上也确认了这条消息。除去Mushi的老冤家Kyxy，Xtinct和Kang也是东南亚的老选手了，而Alacrity似乎是一个新人，不过据说这位新人很厉害，目前已经是东南亚天梯的前3了。这会是下一个Midone吗？</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第四块 -->
+	<div id="pice4" class="rightCont">
+		<div class="cover"></div>		
+		<div class="wrap">
+			<div class="box">
+				<div class="box-cont">
+					<img src="img/fdas.jpg" alt="" width="300px" height="200px">
+					<h3>主页上公布了他们的人</h3>
+					<p>蔡国师在前段时间离开Fnatic后便一直没有了下文，而今天适合又有了下文，棋王蔡宜风再次出山，一支叫Mineski Infinity Malaysia的新队伍在他们的Facebook主页上公布了他们的人员名单，Mushi屹然在列。而在图中我们已经能够看到Mushi的新队伍已经开始了集训。</p>
+				</div>
+			</div>
+			<div class="commet">
+				<div class="describe-img">
+					<img src="img/fdas.jpg" alt="" width="300px" height="200px">
+				</div>
+				<div class="describe">
+					<p>蔡国师在前段时间离开Fnatic后便一直没有了下文，而今天适合又有了下文，棋王蔡宜风再次出山，一支叫Mineski Infinity Malaysia的新队伍在他们的Facebook主页上公布了他们的人员名单，Mushi屹然在列。而在图中我们已经能够看到Mushi的新队伍已经开始了集训。而Mushi自己的facebook上也确认了这条消息。除去Mushi的老冤家Kyxy，Xtinct和Kang也是东南亚的老选手了，而Alacrity似乎是一个新人，不过据说这位新人很厉害，目前已经是东南亚天梯的前3了。这会是下一个Midone吗？</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	document.getElementById('pice1').style.background = "url('img/vs.jpg') center repeat"
+	document.getElementById('pice2').style.background = "url('img/fx.jpg') center repeat"
+	document.getElementById('pice3').style.background = "url('img/xh.jpg') center repeat"
+	document.getElementById('pice4').style.background = "url('img/pk.jpg') center repeat"
+</script>
+<script type="text/javascript" src="js/sidebar.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/shape.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

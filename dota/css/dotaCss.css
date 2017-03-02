@@ -1,0 +1,226 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53;}
+body {-webkit-font-smoothing: antialiased}
+h1, h2, h3, h4, h5, h6,p{ font-size:100%; font-family: "微软雅黑"; font-weight:normal; color:white;}
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+
+/* 加入字体 */
+@font-face { 
+    font-family: luobo; 
+    src: url('../font/luobo.ttf'); 
+} 
+
+@font-face { 
+    font-family: 小小白字体; 
+    src: url('../font/小小白字体.ttf'); 
+} 
+
+img {
+    border: 1px solid white;
+}
+
+h3 {
+    color:#e7d469;
+}
+
+.commet {
+    z-index: -1;
+}
+
+.wrap {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	/* background-color: blue; */
+}
+
+.box{
+	border-radius:40px;  
+	/* background:#999; */
+	width:550px; 
+	height:430px; 
+	margin: auto;
+	border:5px solid white;
+	transform:rotate(30deg);
+		overflow: hidden;
+
+	/* display: inline-block; */
+	/* margin:0 auto; */
+}
+
+.box-cont {
+    width: 500px;
+	transform:rotate(0deg);
+}
+
+.describe-img {
+	width: 300px;
+	height: 200px;
+	/* display: inline-block; */
+	padding-left: 800px;
+    padding-bottom: 20px;
+/* 	margin-left: auto;
+    margin-top: -225px;
+    margin-right: 120px;
+    margin-bottom: 25px;
+	background-color: #fff; */
+}
+
+.title {
+	text-align: center;
+    height: 175px;
+    width: 100%;
+    background-color: #222;
+}
+
+.title h1 {
+	font-size: 60px;
+    color: #75311e;
+    letter-spacing: 30px;
+}
+
+.leftCont,.rightCont {
+	width: 100%;
+	height: 700px;
+	/* background: url('../img/5dc1c7332b2eb9117d292f9f799215459c3132bedb6d1-CIio4h_fw658.jpg') center repeat; */
+	background-color: #313129;
+	/* background-size: 100% 100%; */
+	/* 背景透明度 */
+  	filter:alpha(opacity=50);  
+  	-moz-opacity:0.5;  
+  	-khtml-opacity: 0.5;  
+  	opacity: 0.87;  
+    border-bottom:1px solid #c9ad4c;
+}
+
+.cover {
+    width: 100%;
+    height: 700px;
+    background-color: #000;
+    filter:alpha(opacity=50);  
+    -moz-opacity: 0.76;  
+    -khtml-opacity: 0.76;  
+    opacity: 0.76; 
+    position: absolute;
+    z-index: -1;
+}
+
+.leftCont{
+
+}
+
+.rightCont {
+	background-color: #714135;
+}
+
+.leftCont .box {
+	position: relative;
+    top: 130px;
+    left: -260px;
+}
+
+/* 描述段落的样式 */
+.leftCont .describe {
+	width: 44%;
+    margin-left: auto;
+    text-indent: 2em;
+    line-height: 1.8em;
+}    
+
+.leftCont .box .box-cont {
+	transform:rotate(-30deg);
+}
+
+.leftCont .box .box-cont img {
+    margin-top: 20px;
+    margin-left: 50px;
+    transform: rotate(-10deg);
+}
+
+.leftCont .box .box-cont h3 {
+    font-family: luobo;
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 220px;
+    padding-bottom: 10px;
+	/* text-align: center; */
+}
+
+.leftCont .box .box-cont p {
+	width: 350px;
+    padding-left: 148px;
+    font-family: 小小白字体;
+    font-size: 17px;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+.leftCont .commet {
+	position: relative;
+    top: -230px;
+}
+
+.rightCont .box {
+    transform: rotate(-30deg);
+    position: relative;
+    top: 130px;
+    /* left: 829px; */
+    right: -260px;
+    /* float: right; */
+}
+
+.rightCont .box .box-cont {
+	transform: rotate(30deg);
+}
+
+.rightCont .box .box-cont img {
+    margin-top: -10px;
+    margin-left: 220px;
+    transform: rotate(10deg);
+}
+
+.rightCont .describe {
+	width: 44%;
+    /* margin-left: auto; */
+    text-indent: 2em;
+    line-height: 1.8em;
+}    
+
+.rightCont .commet {
+    position: relative;
+    top: -226px;
+}
+
+.rightCont .commet .describe-img {
+	padding-left: 150px;
+	padding-bottom: 20px;
+}
+
+.rightCont .box .box-cont h3 {
+    font-family: luobo;
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 80px;
+    padding-bottom: 10px;
+	/* text-align: center; */
+}
+
+.rightCont .box .box-cont p {
+	width: 350px;
+    padding-left: 80px;
+    font-family: 小小白字体;
+    font-size: 17px;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
